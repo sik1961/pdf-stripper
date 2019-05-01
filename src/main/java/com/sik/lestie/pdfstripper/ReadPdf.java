@@ -32,7 +32,7 @@ public class ReadPdf {
 
 					if (!document.isEncrypted()) {
 
-						Set<String> keys = document.getDocumentInformation().getMetadataKeys();
+						//Set<String> keys = document.getDocumentInformation().getMetadataKeys();
 
 						System.out.println(pdf.getName() + " - " + document.getDocumentInformation().getTitle() + ", "
 								+ document.getDocumentInformation().getAuthor() + ", "
@@ -40,20 +40,7 @@ public class ReadPdf {
 								+ document.getDocumentInformation().getCreator() + ", "
 								+ document.getDocumentInformation().getCreationDate().get(Calendar.YEAR));
 
-						// PDFTextStripperByArea stripper = new PDFTextStripperByArea();
-						// stripper.setSortByPosition(true);
 
-						// PDFTextStripper tStripper = new PDFTextStripper();
-
-						// String pdfFileInText = tStripper.getText(document);
-						// tStripper.
-						// System.out.println("Text:" + st);
-
-						// split by whitespace
-						// String lines[] = pdfFileInText.split("\\r?\\n");
-						// for (String line : lines) {
-						// System.out.println(line);
-						// }
 
 					}
 					document.close();
